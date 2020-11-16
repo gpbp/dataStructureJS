@@ -41,4 +41,8 @@ test('Peek the element on top of the stack', () => {
     expect(stack.peek()).toBe(2);
     expect(stack.size()).toBe(2);
     expect(stack.pop()).toBe(2);
-})
+});
+
+test('Do pop while the stack is empty', () => {
+    expect(stack.pop()).toBe(undefined);
+});
