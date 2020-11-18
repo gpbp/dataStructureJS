@@ -150,6 +150,7 @@ class BinarySearchTree {
                     removeNode(node.data, node.right);
                     return;
                 }
+                // node has no right child
                 if (node.right === null) {
                     node.data = node.left.data;
                     removeNode(node.data, node.left);
@@ -213,7 +214,7 @@ class BinarySearchTree {
         };
     }
 
-    
+
     inOrder() {
       if (this.root == null) {
         return null;
